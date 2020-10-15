@@ -8,7 +8,8 @@
     <style>
         body {
             background-image: url(img/eror404.png);
-            background-size: cover
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         #test {

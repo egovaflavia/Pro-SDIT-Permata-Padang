@@ -109,25 +109,28 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="">Home</a>
+                <a class="nav-link" href="asd">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Berita</a>
+                <a class="nav-link" href="asd">Pendaftaran Siswa Baru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asd">Berita</a>
               </li>
               <li class="nav-item submenu dropdown">
-                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
+                <a href="asd" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="">Sambutan</a>
+                    <a class="nav-link" href="asd">Sambutan</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Struktur</a>
+                    <a class="nav-link" href="asd">Struktur</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Visi dan Misi</a>
+                    <a class="nav-link" href="asd">Visi dan Misi</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Sarana dan Prasarana</a>
+                    <a class="nav-link" href="asd">Sarana dan Prasarana</a>
                   </li>
                 </ul>
               </li>
@@ -135,19 +138,19 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pendidikan</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="">Intrakurikuler</a>
+                    <a class="nav-link" href="asd">Intrakurikuler</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Ekstrakurikuler</a>
+                    <a class="nav-link" href="asd">Ekstrakurikuler</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Kurikulum</a>
+                    <a class="nav-link" href="asd">Kurikulum</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Prestasi</a>
+                    <a class="nav-link" href="asd">Prestasi</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Akreditasi</a>
+                    <a class="nav-link" href="asd">Akreditasi</a>
                   </li>
                 </ul>
               </li>
@@ -155,30 +158,30 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tentang</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="">Agenda</a>
+                    <a class="nav-link" href="asd">Agenda</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Guru</a>
+                    <a class="nav-link" href="asd">Guru</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Siswa</a>
+                    <a class="nav-link" href="asd">Siswa</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Alumni</a>
+                    <a class="nav-link" href="asd">Alumni</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Galeri</a>
+                    <a class="nav-link" href="asd">Galeri</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Video</a>
+                    <a class="nav-link" href="asd">Video</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="asd">Contact</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link search" id="search">
+                <a href="asd" class="nav-link search" id="search">
                   <i class="ti-search"></i>
                 </a>
               </li>
@@ -213,7 +216,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                 SD IT Permata Padang
               </h2> -->
               <div>
-                <a href="#" class="primary-btn2 mb-3 mb-sm-0">Pendaftara Siswa Baru </a>
+                <!-- <a href="#" class="primary-btn2 mb-3 mb-sm-0">Pendaftara Siswa Baru </a> -->
                 <!-- <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a> -->
               </div>
             </div>
@@ -331,13 +334,13 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                 <div class="course_content">
                   <span class="tag mb-4 d-inline-block"><?= tgl_indo($data['tgl_post']) ?></span>
                   <h4 class="mb-3">
-                    <a href=""><?= $data['judul_berita'] ?></a>
+                    <a href="asd"><?= $data['judul_berita'] ?></a>
                   </h4>
                   <p>
                     <?= $isi ?> ....
                   </p>
                   <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
-                    <a href="" class="btn btn-primary">Selengkapnya</a>
+                    <a href="asd" class="btn btn-primary">Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -348,7 +351,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
         </div>
       </div>
 
-      <a href="" class="btn btn-primary">Semua Berita</a>
+      <a href="asd" class="btn btn-primary">Semua Berita</a>
     </div>
   </div>
   <!--================ End Popular Courses Area =================-->
@@ -437,7 +440,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
             </div>
             <div class="meta-text text-sm-center">
               <h4><?= $data['judul_agenda'] ?></h4>
-              <p class="mt-3"><a href="" class="btn btn-primary">Selengkapnya</a></p>
+              <p class="mt-3"><a href="asd" class="btn btn-primary">Selengkapnya</a></p>
               <div class="align-items-center justify-content-center d-flex">
                 <a href="#"><i class="ti-facebook"></i></a>
                 <a href="#"><i class="ti-twitter"></i></a>
@@ -534,7 +537,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
 
       </div>
 
-      <a href="" class="btn btn-primary">Semua Dokumentasi</a>
+      <a href="asd" class="btn btn-primary">Semua Dokumentasi</a>
 
     </div>
   </div>
@@ -547,10 +550,10 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
         <div class="col-lg-3 col-md-6 single-footer-widget">
           <h4>SD IT Permata</h4>
           <ul>
-            <li><a href="">Sambutan</a></li>
-            <li><a href="">Struktur</a></li>
-            <li><a href="">Visi, Misi, & Akreditasi</a></li>
-            <li><a href="">Fasilitas</a></li>
+            <li><a href="asd">Sambutan</a></li>
+            <li><a href="asd">Struktur</a></li>
+            <li><a href="asd">Visi, Misi, & Akreditasi</a></li>
+            <li><a href="asd">Fasilitas</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 single-footer-widget">
@@ -564,10 +567,10 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
         <div class="col-lg-2 col-md-6 single-footer-widget">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="">Beranda</a></li>
-            <li><a href="">Profile</a></li>
-            <li><a href="">Berita</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="asd">Beranda</a></li>
+            <li><a href="asd">Profile</a></li>
+            <li><a href="asd">Berita</a></li>
+            <li><a href="asd">Contact</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6 single-footer-widget">
@@ -587,10 +590,10 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
         <div class="col-lg-4 col-sm-12 footer-social">
-          <a href=""><i class="ti-facebook"></i></a>
-          <a href=""><i class="ti-instagram"></i></a>
-          <a href=""><i class="ti-twitter"></i></a>
-          <a href=""><i class="ti-email"></i></a>
+          <a href="asd"><i class="ti-facebook"></i></a>
+          <a href="asd"><i class="ti-instagram"></i></a>
+          <a href="asd"><i class="ti-twitter"></i></a>
+          <a href="asd"><i class="ti-email"></i></a>
           <a href="https://goo.gl/maps/T9JrJb3oxdPwtPgC7"><i class="ti-map"></i></a>
         </div>
       </div>
