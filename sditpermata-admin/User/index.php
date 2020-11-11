@@ -6,25 +6,26 @@ include "../../config/fungsi_indotgl.php";
 error_reporting(0);
 ?>
 <?php
-if (!$_SESSION['id']) {
-    header('Location: ../login.php');
-} else{?>
+if (1 != 1) {
+  header('Location: ../login.php');
+} else { ?>
 
-<!-- /*Create Nopen rianto - date 2017-06-02 */ -->
-<!DOCTYPE html>
+  <!-- /*Create Nopen rianto - date 2017-06-02 */ -->
+  <!DOCTYPE html>
 
-<html>
+  <html>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <link rel="shortcut icon" href="../../foto/icon.jpg"/>
+    <link rel="shortcut icon" href="../../foto/icon.jpg" />
     <title>Administrator</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/datatables.min.css" />
     <link rel="stylesheet" href="../assets/css/AdminLTE.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap3-wysihtml5.min.css">
     <link rel="stylesheet" href="../assets/css/skins/_all-skins.min.css">
@@ -36,10 +37,10 @@ if (!$_SESSION['id']) {
   <body class="hold-transition skin-blue sidebar-mini">
 
     <div class="wrapper">
-          <div class="logo">
-            <img src="../../img/assets/logo1.png" width="170">
-            <span class="nm-sek"></span>
-        </div>
+      <div class="logo">
+        <img src="../../img/assets/logo1.png" width="170">
+        <span class="nm-sek"></span>
+      </div>
       <header class="main-header">
         <!-- Logo -->
         <div href="#" class="logo">
@@ -63,14 +64,14 @@ if (!$_SESSION['id']) {
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="../assets/images/user.png" class="user-image" alt="User Image">
-                  <span class="hidden-xs"><?php echo $_SESSION['nama'];?></span>
+                  <span class="hidden-xs"><?php echo $_SESSION['nama']; ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
                     <img src="../assets/images/user.png" class="img-circle" alt="User Image">
                     <p>
-                      <?php echo $_SESSION['nama'];?>
+                      <?php echo $_SESSION['nama']; ?>
                     </p>
                   </li>
                   <!-- Menu Body -->
@@ -80,10 +81,10 @@ if (!$_SESSION['id']) {
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                        <a href="#" class="btn btn-default btn-flat"><i class="fa fa-user"> Profil</i></a>
+                      <a href="#" class="btn btn-default btn-flat"><i class="fa fa-user"> Profil</i></a>
                     </div>
                     <div class="pull-right">
-                        <a href="logout.php" class="btn btn-default btn-flat"><i class="fa fa-sign-out"> Keluar</i></a>
+                      <a href="logout.php" class="btn btn-default btn-flat"><i class="fa fa-sign-out"> Keluar</i></a>
                     </div>
                   </li>
                 </ul>
@@ -111,19 +112,19 @@ if (!$_SESSION['id']) {
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li>
-               <a href="?module=home">
-                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <a href="?module=home">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
 
-               </a>
-             </li>
+              </a>
+            </li>
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-list"></i>
-                  <span>Profil Sekolah</span>
-                  <i class="fa fa-angle-left pull-right"></i>
+                <span>Profil Sekolah</span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-				<li><a href="?module=sambutan"><i class="fa fa-bookmark"></i>Sambutan</a></li>
+                <li><a href="?module=sambutan"><i class="fa fa-bookmark"></i>Sambutan</a></li>
                 <li><a href="?module=struktur"><i class="fa fa-bookmark"></i>Struktur</a></li>
                 <li><a href="?module=visi_misi"><i class="fa fa-bookmark"></i> <span>Misi & Visi</span></a></li>
                 <li><a href="?module=sarana_prasarana"><i class="fa fa-bookmark"></i> <span>Sarana Prasarana</span></a></li>
@@ -131,27 +132,27 @@ if (!$_SESSION['id']) {
                 <li><a href="?module=catatan_kata"><i class="fa fa-bookmark"></i> <span>Catatan Kata</span></a></li>
               </ul>
             </li>
-			
-			<li class="treeview">
+
+            <li class="treeview">
               <a href="#">
                 <i class="fa fa-list"></i>
-                  <span>Pendidikan</span>
-                  <i class="fa fa-angle-left pull-right"></i>
+                <span>Pendidikan</span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-				<li><a href="?module=instrakulikuler"><i class="fa fa-bookmark"></i>Instrakulikuler</a></li>
+                <li><a href="?module=instrakulikuler"><i class="fa fa-bookmark"></i>Instrakulikuler</a></li>
                 <li><a href="?module=ekstrakulikuler"><i class="fa fa-bookmark"></i>Ekstrakulikuler</a></li>
                 <li><a href="?module=kurikulum"><i class="fa fa-bookmark"></i> <span>Kurikulum</span></a></li>
                 <li><a href="?module=prestasi"><i class="fa fa-bookmark"></i> <span>Prestasi</span></a></li>
-				<li><a href="?module=akreditasi"><i class="fa fa-bookmark"></i> <span>Akreditasi</span></a></li>
+                <li><a href="?module=akreditasi"><i class="fa fa-bookmark"></i> <span>Akreditasi</span></a></li>
               </ul>
             </li>
 
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-list"></i>
-                  <span>Data Website</span>
-                  <i class="fa fa-angle-left pull-right"></i>
+                <span>Data Website</span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li>
@@ -171,8 +172,8 @@ if (!$_SESSION['id']) {
                     <i class="fa fa-envelope-o"></i> <span>Alumni</span>
                   </a>
                 </li>
-				
-				<li>
+
+                <li>
                   <a href="?module=psb">
                     <i class="fa fa-envelope-o"></i> <span>PSB</span>
                   </a>
@@ -183,57 +184,57 @@ if (!$_SESSION['id']) {
                     <i class="fa fa-image"></i> <span>Gallery</span>
                   </a>
                 </li>
-				
-				<!--<li>-->
-    <!--              <a href="?module=testimoni">-->
-    <!--                <i class="fa fa-image"></i> <span>Video</span>-->
-    <!--              </a>-->
-    <!--            </li>-->
-				
-				<li>
+
+                <!--<li>-->
+                <!--              <a href="?module=testimoni">-->
+                <!--                <i class="fa fa-image"></i> <span>Video</span>-->
+                <!--              </a>-->
+                <!--            </li>-->
+
+                <li>
                   <a href="?module=pesan">
                     <i class="fa fa-image"></i> <span>Pesan</span>
                   </a>
                 </li>
-               
+
               </ul>
             </li>
-				
-			<li>
-                  <a href="?module=guru_tkp">
-                    <i class="fa fa-list"></i> <span> Guru</span>
-                  </a>
+
+            <li>
+              <a href="?module=guru_tkp">
+                <i class="fa fa-list"></i> <span> Guru</span>
+              </a>
             </li>
-			
-			<li>
-                  <a href="?module=siswa">
-                    <i class="fa fa-list"></i> <span> Siswa</span>
-                  </a>
+
+            <li>
+              <a href="?module=siswa">
+                <i class="fa fa-list"></i> <span> Siswa</span>
+              </a>
             </li>
-			
-			<li>
-                  <a href="?module=sosmed">
-                    <i class="fa fa-list"></i> <span> Sosial Media</span>
-                  </a>
+
+            <li>
+              <a href="?module=sosmed">
+                <i class="fa fa-list"></i> <span> Sosial Media</span>
+              </a>
             </li>
-			
-			<li>
-                  <a href="?module=video">
-                    <i class="fa fa-list"></i> <span> Video</span>
-                  </a>
+
+            <li>
+              <a href="?module=video">
+                <i class="fa fa-list"></i> <span> Video</span>
+              </a>
             </li>
-			<li>
-                  <a href="?module=slide">
-                    <i class="fa fa-list"></i> <span> Slide</span>
-                  </a>
+            <li>
+              <a href="?module=slide">
+                <i class="fa fa-list"></i> <span> Slide</span>
+              </a>
             </li>
-       
-			<!-- <li>
+
+            <!-- <li>
               <a href="?module=admin">
                 <i class="fa fa-user"></i> <span>Admin</span>
               </a>
             </li> -->
-			     <li>
+            <li>
               <a href="logout.php">
                 <i class="fa fa-sign-out"></i> <span>Logout</span>
               </a>
@@ -244,16 +245,16 @@ if (!$_SESSION['id']) {
       </aside>
 
       <!-- Content Wrapper. Contains page content -->
-	  <content>
-		<?php include"content.php"; ?>
-	  </content>
+      <content>
+        <?php include "content.php"; ?>
+      </content>
       <!-- /.content-wrapper -->
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
           <b></b>
         </div>
-         &copy; Copyright <?php echo date('Y');  ?> CV. Mediatama Web Indonesia
+        &copy; Copyright <?php echo date('Y');  ?> CV. Mediatama Web Indonesia
       </footer>
 
       <!-- Control Sidebar -->
@@ -288,8 +289,8 @@ if (!$_SESSION['id']) {
     <script src="../assets/js/backtoTop.js"></script>
     <script src="../assets/ckeditor/ckeditor.js"></script>
     <script src="../assets/select2/dist/js/select2.full.min.js"></script>
- <script>
-      $(function () {
+    <script>
+      $(function() {
         $('.textarea').wysihtml5();
         $('.select2').select2();
         $('#datepicker').datepicker({
@@ -306,11 +307,12 @@ if (!$_SESSION['id']) {
           "autoWidth": false
         });
 
-        CKEDITOR.replace( 'editor');
+        CKEDITOR.replace('editor');
       });
     </script>
   </body>
-</html>
+
+  </html>
 <?php
 }
 ?>

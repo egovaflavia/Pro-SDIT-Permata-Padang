@@ -4073,7 +4073,7 @@ h6 {
   }
 
   .header_area .navbar {
-    background: #868686;
+    /* background: #868686; */
   }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {

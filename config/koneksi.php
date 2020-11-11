@@ -1,5 +1,5 @@
 <?php
-$base_url = "http://localhost/KITTRAVELLING/";
+// $base_url = "http://localhost/KITTRAVELLING/";
 date_default_timezone_set('Asia/Jakarta');
 $server = "localhost";
 // $user = "sditgsch_permata";
