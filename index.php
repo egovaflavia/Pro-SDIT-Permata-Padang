@@ -213,7 +213,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                 SD IT Permata Padang
               </h2> -->
               <div>
-                <a href="#" class="primary-btn2 mb-3 mb-sm-0">Pendaftara Siswa Baru </a>
+                <!-- <a href="#" class="primary-btn2 mb-3 mb-sm-0">Pendaftara Siswa Baru </a> -->
                 <!-- <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a> -->
               </div>
             </div>
@@ -355,13 +355,28 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
             <div class="kiri">
               <h4>Kepala Madrasah</h4>
               <div class="card">
-                <img alt="KEPALA MADRASAH" height="273" id="Image1_img" src="http://1.bp.blogspot.com/--DP6708cY1Q/XNkNPPZFSSI/AAAAAAAAAZw/k_VtNMsq0igtyy-rIxAGl0mqwy4N0wPNQCK4BGAYYCw/s1600/ZALKHAIRI%252C%2BS.Ag.jpg" width="195" style="visibility: visible;">
+                <img alt="KEPALA MADRASAH" height="273" id="Image1_img" src="img/ZALKHAIRI.jpg" width="195" style="visibility: visible;">
                 <h5 class="text-center">Zalkhairi, S.Ag, M.Pd</h5>
+              </div>
+              <br>
+              <h4>Save The Earth</h4>
+              <div class="card">
+                <img alt="save the earth" height="273" id="Image1_img" src="img/green.jpg" width="195" style="visibility: visible;">
+              </div><br>
+              <div class="card">
+                <img alt="save the earth" height="273" id="Image1_img" src="img/germas.jpeg" width="195" style="visibility: visible;">
+              </div><br>
+              <div class="card">
+                <img alt="save the earth" height="273" id="Image1_img" src="img/germas.jpg" width="195" style="visibility: visible;">
+              </div><br>
+              <div class="card">
+                <img alt="save the earth" height="273" id="Image1_img" src="img/re.jpg" width="195" style="visibility: visible;">
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!--================ End Popular Courses Area =================-->
@@ -519,7 +534,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
       <div class="row justify-content-center">
         <div class="col-lg-5">
           <div class="main_title">
-            <h2 class="mb-3">Dokumentasi Video</h2>
+            <h2 class="">Dokumentasi Video</h2>
             <p>
               Dokumentasi Video SD IT Permata Padang
             </p>

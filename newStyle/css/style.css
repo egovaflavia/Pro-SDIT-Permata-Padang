@@ -226,7 +226,7 @@ button:focus {
 .header_area .navbar .nav .nav-item .nav-link {
   font: 500 14px/80px "Rubik", sans-serif;
   text-transform: capitalize;
-  color: rgba(0, 35, 71, 0.5);
+  color: #002347;
   padding: 0px;
   display: inline-block;
 }
@@ -470,6 +470,7 @@ button:focus {
   transform: translateY(-50%);
   z-index: 10;
   width: 100%;
+  height: 100px;
 }
 
 @media (max-width: 991px) {
@@ -685,7 +686,7 @@ button:focus {
   padding: 30px;
 }
 
-#feature_area .main_title {
+#feature_area .main_title h2 {
   font-family: 'Oswald',
     sans-serif !important;
   font-weight: 400;
@@ -737,13 +738,14 @@ button:focus {
 /* Start Popular Courses Area css
 ============================================================================================ */
 #popular_courses .popular_courses {
-  background: rgba(196, 188, 188, 0.2);
+  background: rgba(204, 200, 200, 0.2);
   padding: 30px;
 }
 
 #popular_courses .kiri {
-  box-shadow: 0 0 30px rgba(145, 151, 151, 0.342);
+  box-shadow: 0 0 30px rgba(175, 182, 182, 0.342);
   padding: 30px;
+  height: 1250px;
 }
 
 #popular_courses .kotak {
@@ -1290,10 +1292,8 @@ h3 {
 
 .trainer_area .main_title h2,
 h3 {
-  background-color: #032e5ae1;
   font-family: 'Oswald',
     sans-serif !important;
-  color: #fff;
   font-weight: 200;
 }
 
@@ -1482,6 +1482,13 @@ p {
 ============================================================================================ */
 .testimonial_area {
   background: rgba(208, 208, 231, 0.8);
+}
+
+.testimonial_area .main_title h2,
+p {
+  font-family: 'Oswald',
+    sans-serif !important;
+  font-weight: 200;
 }
 
 .testimonial_area .owl-carousel .owl-dots {
