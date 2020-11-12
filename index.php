@@ -295,6 +295,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
         </div>
       </div>
     </div>
+    <br>
   </section>
   <!--================ End Feature Area =================-->
 
@@ -428,13 +429,14 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
       <div class="row justify-content-center">
         <div class="col-lg-5">
           <div class="main_title">
-            <h2 class="mb-3">Agenda</h2>
+            <h2>Agenda</h2>
             <p>
               Agenda Sekolah, SD IT Permata Padang
             </p>
           </div>
         </div>
       </div>
+
       <div class="row justify-content-center d-flex align-items-center">
         <!-- Awal Perulangan  -->
         <?php
@@ -443,9 +445,11 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
           $isi = substr($data['isi_agenda'], 0, 200);
           // var_dump($data);
         ?>
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="col-lg-4 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
-              <img style="width:100%; height: 200px;" class="img-fluid" src="img/agenda sekolah/<?= $data['gambar'] ?>" alt="No Image" />
+              <div class="card">
+                <img style="width:100%; height: 300px;" class="img-fluid" src="img/agenda sekolah/<?= $data['gambar'] ?>" alt="No Image" />
+              </div>
             </div>
             <div class="meta-text text-sm-center">
               <h4><?= $data['judul_agenda'] ?></h4>
@@ -458,6 +462,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
               </div>
             </div>
           </div>
+
         <?php } ?>
 
         <!-- Akhir Perulangan  -->
@@ -494,7 +499,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                 <div class="card">
                   <div class="card-body">
                     <h2><?= $pecahTesti['nama_testi'] ?></h2>
-                    <small><?= $pecahTesti['profesi_testi'] ?></small>
+                    <small><u class="text-info"><?= $pecahTesti['profesi_testi'] ?></u></small>
                     <p><?= $pecahTesti['deskripsi_testi'] ?></p>
                   </div>
                 </div>
