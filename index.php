@@ -107,7 +107,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
             <span class="icon-bar"></span>
           </button>
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse offset mt-4" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="">Home</a>
@@ -190,7 +190,6 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
     </div>
   </header>
   <!--================ End Header Menu Area =================-->
-
   <!--================ Start Home Banner Area =================-->
   <section class="home_banner_area">
     <div class="owl-carousel active_course_single">
@@ -225,7 +224,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
   <!--================ End Home Banner Area =================-->
 
   <!--================ Start Feature Area =================-->
-  <section class="feature_area section_gap_top">
+  <section class="feature_area section_gap_top" id="feature_area">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-5">
@@ -300,62 +299,74 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
   <!--================ End Feature Area =================-->
 
   <!--================ Start Popular Courses Area =================-->
-  <div class="popular_courses">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-5">
-          <div class="main_title">
-            <h2 class="mb-3">Berita Terkini</h2>
-            <p>
-              Menyajikan berita seputar SD IT Permata Padang
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- single course -->
-        <div class="col-lg-12">
-          <div class="owl-carousel active_course">
-
-            <!-- Awal Perulangan -->
-            <?php
-            $sql = mysqli_query($con, "SELECT * FROM berita ORDER BY id_berita DESC LIMIT 4");
-            while ($data = mysqli_fetch_assoc($sql)) {
-              $isi = substr($data['isi_berita'], 0, 50);
-              $judulberita = substr($data['judul_berita'], 0, 16) . "...";
-              // var_dump($data);
-            ?>
-              <div class="single_course">
-                <div class="course_head">
-                  <img style="height: 230px;" class="img-fluid" src="img/berita/<?= $data['gambar'] ?>" alt="No Image" />
-                </div>
-                <div class="course_content">
-                  <span class="tag mb-4 d-inline-block"><?= tgl_indo($data['tgl_post']) ?></span>
-                  <h4 class="mb-3">
-                    <a href=""><?= $data['judul_berita'] ?></a>
-                  </h4>
-                  <p>
-                    <?= $isi ?> ....
-                  </p>
-                  <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
-                    <a href="" class="btn btn-primary">Selengkapnya</a>
-                  </div>
-                </div>
+  <section id="popular_courses">
+    <div class="popular_courses">
+      <div class="container">
+        <div class="row">
+          <!-- single course -->
+          <div class="col-lg-9">
+            <div class="kiri">
+              <div class="main_title">
+                <h2 class="mt-3">Berita Terkini</h2>
+                <p>
+                  Menyajikan berita seputar SD IT Permata Padang
+                </p>
               </div>
-            <?php } ?>
-            <!-- Akhir Perulangan -->
+              <ul>
+                <?php
+                $sql = mysqli_query($con, "SELECT * FROM berita ORDER BY id_berita DESC LIMIT 4");
+                while ($data = mysqli_fetch_assoc($sql)) {
+                  $isi = substr($data['isi_berita'], 0, 100);
+                  $judulberita = substr($data['judul_berita'], 0, 16) . "...";
+                ?>
+                  <li>
+                    <div class="row">
+                      <div class="kotak">
+                        <div class="col-md-4">
+                          <span class="rel_thumb">
+                            <img style="height: 230px;" width="320px" class="img-fluid" src="img/berita/<?= $data['gambar'] ?>" alt="No Image" />
+                          </span>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="rel_right">
+                            <h4><a href=""><?php ?></a></h4>
+                            <h3><?= $data['judul_berita'] ?></h3>
+                            <div class="meta">
+                              <span class="author">Posted in : <a href="#"><?= tgl_indo($data['tgl_post']) ?></a></span>
+                            </div>
+                            <p>
+                              <?= $isi ?> ....
+                            </p>
+                            <a href="" class="btn btn-primary">Selengkapnya</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <br>
+                <?php } ?>
+                <a href="" class="btn btn-primary">Semua Berita</a>
+              </ul>
+            </div>
+          </div>
 
+          <div class="col-lg-3">
+            <div class="kiri">
+              <h4>Kepala Madrasah</h4>
+              <div class="card">
+                <img alt="KEPALA MADRASAH" height="273" id="Image1_img" src="http://1.bp.blogspot.com/--DP6708cY1Q/XNkNPPZFSSI/AAAAAAAAAZw/k_VtNMsq0igtyy-rIxAGl0mqwy4N0wPNQCK4BGAYYCw/s1600/ZALKHAIRI%252C%2BS.Ag.jpg" width="195" style="visibility: visible;">
+                <h5 class="text-center">Zalkhairi, S.Ag, M.Pd</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <a href="" class="btn btn-primary">Semua Berita</a>
     </div>
-  </div>
+  </section>
   <!--================ End Popular Courses Area =================-->
 
   <!--================ Start Registration Area =================-->
-  <div class="section_gap registration_area">
+  <!-- <div class="section_gap registration_area">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-7">
@@ -408,7 +419,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--================ End Registration Area =================-->
 
   <!--================ Start Trainers Area =================-->
@@ -456,43 +467,45 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
   <!--================ End Trainers Area =================-->
 
   <!--================ Start Events Area =================-->
-  <div class="events_area">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-5">
-          <div class="main_title">
-            <h2 class="mb-3 text-white">Testimonial</h2>
-            <p>
-              Pendapat mereke tentan SD IT Permata Padang
-            </p>
+  <section id="events_area">
+    <div class="events_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="main_title">
+              <h2 class="mb-3 text-white">Testimonial</h2>
+              <p>
+                Pendapat mereke tentan SD IT Permata Padang
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
+        <div class="row">
 
-        <!-- Awal Perulangan -->
-        <?php
-        $ambilTesti = mysqli_query($con, "SELECT * FROM `testimoni` WHERE 1");
-        while ($pecahTesti = mysqli_fetch_assoc($ambilTesti)) {
-          $isi = substr($pecahTesti['isi_agenda'], 0, 200);
-          // var_dump($pecahTesti);
-        ?>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="single_event position-relative">
-              <div class="card">
-                <div class="card-body">
-                  <h2><?= $pecahTesti['nama_testi'] ?></h2>
-                  <small><?= $pecahTesti['profesi_testi'] ?></small>
-                  <p><?= $pecahTesti['deskripsi_testi'] ?></p>
+          <!-- Awal Perulangan -->
+          <?php
+          $ambilTesti = mysqli_query($con, "SELECT * FROM `testimoni` WHERE 1");
+          while ($pecahTesti = mysqli_fetch_assoc($ambilTesti)) {
+            $isi = substr($pecahTesti['isi_agenda'], 0, 200);
+            // var_dump($pecahTesti);
+          ?>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="single_event position-relative">
+                <div class="card">
+                  <div class="card-body">
+                    <h2><?= $pecahTesti['nama_testi'] ?></h2>
+                    <small><?= $pecahTesti['profesi_testi'] ?></small>
+                    <p><?= $pecahTesti['deskripsi_testi'] ?></p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Akhir Perulangan -->
-        <?php } ?>
+            <!-- Akhir Perulangan -->
+          <?php } ?>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!--================ End Events Area =================-->
 
   <!--================ Start Testimonial Area =================-->
@@ -524,7 +537,8 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
             <div class="testi_text text-center">
               <p>
                 <h4>Dean Lewis ~ Be Alright (Lyrics dan Terjemahan Indonesia)</h4>
-                <a href="https://www.youtube.com/watch?v=LWfXwAQ-tuo" class="btn btn-primary">Lihat Selengkapnya di Youtube</a>
+                <a href="https://www.youtube.com/watch?v=LWfXwAQ-tuo" class="btn btn-primary">Lihat Selengkapnya di
+                  Youtube</a>
               </p>
             </div>
           </div>
@@ -535,7 +549,8 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
             <div class="testi_text text-center">
               <p>
                 <h4>Dean Lewis ~ Be Alright (Lyrics dan Terjemahan Indonesia)</h4>
-                <a href="https://www.youtube.com/watch?v=LWfXwAQ-tuo" class="btn btn-primary">Lihat Selengkapnya di Youtube</a>
+                <a href="https://www.youtube.com/watch?v=LWfXwAQ-tuo" class="btn btn-primary">Lihat Selengkapnya di
+                  Youtube</a>
               </p>
             </div>
           </div>
@@ -546,7 +561,8 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
             <div class="testi_text text-center">
               <p>
                 <h4>Dean Lewis ~ Be Alright (Lyrics dan Terjemahan Indonesia)</h4>
-                <a href="https://www.youtube.com/watch?v=LWfXwAQ-tuo" class="btn btn-primary">Lihat Selengkapnya di Youtube</a>
+                <a href="https://www.youtube.com/watch?v=LWfXwAQ-tuo" class="btn btn-primary">Lihat Selengkapnya di
+                  Youtube</a>
               </p>
             </div>
           </div>
@@ -580,8 +596,10 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
         <div class="col-lg-3 col-md-6 single-footer-widget">
           <h4>Legalitas Sekolah</h4>
           <ul>
-            <li><a href="https://dapo.dikdasmen.kemdikbud.go.id/sekolah/7BB497F77965D6BDE9A6">Kementerian Pendidikan</a></li>
-            <li><a href="http://sekolah.data.kemdikbud.go.id/index.php/chome/profil/db3dbe87-1900-4f25-b138-d00fb71d5ea1">Data Pokok Pendidikan</a></li>
+            <li><a href="https://dapo.dikdasmen.kemdikbud.go.id/sekolah/7BB497F77965D6BDE9A6">Kementerian Pendidikan</a>
+            </li>
+            <li><a href="http://sekolah.data.kemdikbud.go.id/index.php/chome/profil/db3dbe87-1900-4f25-b138-d00fb71d5ea1">Data
+                Pokok Pendidikan</a></li>
             <li><a href="https://referensi.data.kemdikbud.go.id/tabs.php?npsn=10310830">Data Referensi</a></li>
           </ul>
         </div>
@@ -607,7 +625,8 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           Copyright &copy;<script>
             document.write(new Date().getFullYear());
-          </script> All rights reserved <b>SD IT Permata Padang</b> | <a href="http://mediatamaweb.com"><b>CV Mediatama Web</b></a> by <a href="https://instagram.com/egovaflavia" target="_blank"><b>Egova</b></a>
+          </script> All rights reserved <b>SD IT Permata Padang</b> | <a href="http://mediatamaweb.com"><b>CV Mediatama
+              Web</b></a> by <a href="https://instagram.com/egovaflavia" target="_blank"><b>Egova</b></a>
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
         <div class="col-lg-4 col-sm-12 footer-social">
@@ -624,7 +643,8 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
 
   <!-- Dari yang lama -->
   <script src="js/plugins.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyAC0h0f0HXUzD3JGdO0SOEyJl22aNxAm1g"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyAC0h0f0HXUzD3JGdO0SOEyJl22aNxAm1g">
+  </script>
   <script src="js/main1f63.js?_=jdu878d7"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

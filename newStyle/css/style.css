@@ -205,7 +205,7 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .header_area {
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 99;
   transition: background 0.4s, all 0.3s linear;
@@ -215,6 +215,7 @@ button:focus {
   background: transparent;
   padding: 0px;
   border: 0px;
+  height: 50px;
   border-radius: 0px;
 }
 
@@ -242,7 +243,7 @@ button:focus {
 
 .header_area .navbar .nav .nav-item:hover .nav-link,
 .header_area .navbar .nav .nav-item.active .nav-link {
-  color: #fdc632;
+  color: #3114d4;
 }
 
 .header_area .navbar .nav .nav-item.submenu {
@@ -673,12 +674,14 @@ button:focus {
 ============================================================================================ */
 /* Start Features Area css
 ============================================================================================ */
-.feature_area {
+
+#feature_area .feature_area {
+  background: rgba(0, 0, 0, 0.8);
   padding-bottom: 100px;
 }
 
 @media (max-width: 991px) {
-  .feature_area {
+  #feature_area .feature_area {
     padding-bottom: 40px;
   }
 }
@@ -721,17 +724,42 @@ button:focus {
 ============================================================================================ */
 /* Start Popular Courses Area css
 ============================================================================================ */
-.popular_courses {
-  padding-bottom: 100px;
+#popular_courses .popular_courses {
+  background: rgba(196, 188, 188, 0.2);
+  padding: 30px;
+}
+
+#popular_courses .kiri {
+  box-shadow: 0 0 30px rgba(145, 151, 151, 0.342);
+  padding: 30px;
+}
+
+#popular_courses .kotak {
+  box-shadow: 0 0 30px rgba(201, 206, 206, 0.6);
+  padding: 30px;
+}
+
+#popular_courses .main_title h2,
+h3 {
+  background-color: #032e5ae1;
+  font-family: 'Oswald',
+    sans-serif !important;
+  color: #fff;
+  font-weight: 400;
+}
+
+#popular_courses .card h4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 @media (max-width: 991px) {
-  .popular_courses {
+  #popular_courses .popular_courses {
     padding-bottom: 40px;
   }
 }
 
-.popular_courses .owl-item {
+#popular_courses .popular_courses .owl-item {
   opacity: 0;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -741,11 +769,11 @@ button:focus {
   padding-bottom: 30px;
 }
 
-.popular_courses .owl-item.active {
+#popular_courses .popular_courses .owl-item.active {
   opacity: 1;
 }
 
-.popular_courses .owl-nav {
+#popular_courses .popular_courses .owl-nav {
   display: flex !important;
   justify-content: space-between;
   position: absolute;
@@ -756,13 +784,13 @@ button:focus {
 }
 
 @media (max-width: 991px) {
-  .popular_courses .owl-nav {
+  #popular_courses .popular_courses .owl-nav {
     display: none !important;
   }
 }
 
-.popular_courses .owl-nav .owl-prev img,
-.popular_courses .owl-nav .owl-next img {
+#popular_courses .popular_courses .owl-nav .owl-prev img,
+#popular_courses .popular_courses .owl-nav .owl-next img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -774,8 +802,8 @@ button:focus {
   transition: all 0.3s ease 0s;
 }
 
-.popular_courses .owl-nav .owl-prev img:hover,
-.popular_courses .owl-nav .owl-next img:hover {
+#popular_courses .popular_courses .owl-nav .owl-prev img:hover,
+#popular_courses .popular_courses .owl-nav .owl-next img:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
@@ -1319,6 +1347,15 @@ button:focus {
 .events_area .event-link img {
   margin-left: 5px;
   display: inline-block;
+}
+
+#events_area .card {
+  box-shadow: 0 0 30px rgba(20, 20, 20, 0.6);
+  padding: 30px;
+}
+
+#events_area .card {
+  background: url(../../img/testi-back.jpg);
 }
 
 .single_event {

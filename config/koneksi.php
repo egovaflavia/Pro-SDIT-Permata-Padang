@@ -6,7 +6,7 @@ $server = "localhost";
 // $password = "sditpp2019";
 // $database = "sditgsch_permata";
 $user = "root";
-$password = "mysql";
+$password = "";
 $database = "db_sditpermata";
 
 $con = mysqli_connect($server, $user, $password, $database) or die(mysqli_connect_error());
