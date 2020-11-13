@@ -246,11 +246,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                   <div class="desc">
                     <h4 class="mt-3 mb-2">Visi Sekolah</h4>
                     <p>
-                      Menyelenggarakan pendidikan yang terintegrasi,
-                      bernuansa Islami dan menyenangkan sehingga menghasilkan
-                      anak-anak yang siap menghadapi berbagai tantangan zaman,
-                      menjaga lingkungannya dan bermanfaat bagi
-                      masyarakat
+                      "CERDAS, BERAKHLAK MULIA, BERDAYA GUNA DAN PEDULI LINGKUNGAN"
                     </p>
                   </div>
                 </div>
@@ -261,15 +257,16 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                     <h4 class="mt-3 mb-2">Misi Sekolah</h4>
                     <p>
                       <ul>
-                        <li>Menjadikan Al-Qur'an dan Assunah Sebagai dasar acuan dari seluruh program</li>
-                        <li>Mengembangkan semaksimal mungkin potensi yang ada pada setiap individu dengan segala
-                          kelebihan
-                          dan
-                          kekuranggannya</li>
-                        <li>Membantu orang tua menyiapkan anak-anak dalam meghadapi tantangan zaman dengan dasar agama
-                          dan
-                          kepribadian yang baik</li>
-                        <li>Membina kerja sama produktif dengan masyarakat sekitar</li>
+                        1. Meningkatkan Prestasi Akademik Lulusan dan Jumlah Siswa yang Melanjutkan Pendidikan di PTN <br>
+                        2. Meningkatkan Kemampuan Siswa dalam Memahami Agama Islam dan Mengaplikasikan dalam Kehidupan Sehari-hari <br>
+                        3. Membudayakan Siswa Tekun Melaksanakan Ibadah wajib, Maupun Sunnah, Santun dalam Bertutur serta Berprilaku <br>
+                        4. Meningkatkan Jumlah Siswa yang Mampu Menjadi Penggerak Keagamaan dan Berperan dalam Kegiatan Kepemudaan di Lingkungan
+                        <br>
+                        5. Meningkatkan Pengetahuaan Pengelolaan Lingkungan Hidup
+                        <br>
+                        6. Meningkatkan Hidup Sehat dan Bersih
+                        <br>
+                        7. Mengembangkan Sikap Peduli Lingkungan
                       </ul>
                     </p>
                   </div>
@@ -283,11 +280,11 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
           <div class="single_feature">
             <div class="icon"><span class="flaticon-earth"></span></div>
             <div class="desc">
-              <h4 class="mt-3 mb-2">Akreditasi Sekolah</h4>
+              <h4 class="mt-3 mb-2">Akreditasi Madrasah</h4>
               <p class="sample-text">
                 Berdasarkan Data Kementrian Pendidikan dan Kebudayaan dengan <br> <b>No. SK. Akreditasi</b> : <br>
                 851/BAP-SM/LL/X/2015 <br>
-                SD IT Permata Padang <b>Terakreditasi B</b> <br>
+                Madrasah aliyah Negeri Kota Pariaman <b>Terakreditasi A</b> <br>
                 <a href="https://referensi.data.kemdikbud.go.id/tabs.php?npsn=10310830">Selengkapnya Klik Disini</a>
               </p>
             </div>
@@ -305,7 +302,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
       <div class="container">
         <div class="row">
           <!-- single course -->
-          <div class="col-lg-9">
+          <div class="col-lg-9 col-md-12">
             <div class="kiri">
               <div class="main_title">
                 <h2 class="mt-3">Berita Terkini</h2>
@@ -323,12 +320,12 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                   <li>
                     <div class="row">
                       <div class="kotak">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-12">
                           <span class="rel_thumb">
                             <img style="height: 230px;" width="320px" class="img-fluid" src="img/berita/<?= $data['gambar'] ?>" alt="No Image" />
                           </span>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12">
                           <div class="rel_right">
                             <h4><a href=""><?php ?></a></h4>
                             <h3><?= $data['judul_berita'] ?></h3>
@@ -351,27 +348,32 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-12">
             <div class="kiri">
               <h4>Kepala Madrasah</h4>
               <div class="card">
-                <img alt="KEPALA MADRASAH" height="273" id="Image1_img" src="img/ZALKHAIRI.jpg" width="195" style="visibility: visible;">
+                <center>
+                  <img alt="KEPALA MADRASAH" height="273" id="Image1_img" src="img/ZALKHAIRI.jpg" width="195" style="visibility: visible;">
+                </center>
                 <h5 class="text-center">Zalkhairi, S.Ag, M.Pd</h5>
               </div>
               <br>
               <h4>Save The Earth</h4>
-              <div class="card">
+              <center>
                 <img alt="save the earth" height="273" id="Image1_img" src="img/green.jpg" width="195" style="visibility: visible;">
-              </div><br>
-              <div class="card">
+              </center>
+              <br>
+              <center>
                 <img alt="save the earth" height="273" id="Image1_img" src="img/germas.jpeg" width="195" style="visibility: visible;">
-              </div><br>
-              <div class="card">
+              </center>
+              <br>
+              <center>
                 <img alt="save the earth" height="273" id="Image1_img" src="img/germas.jpg" width="195" style="visibility: visible;">
-              </div><br>
-              <div class="card">
+              </center>
+              <br>
+              <center>
                 <img alt="save the earth" height="273" id="Image1_img" src="img/re.jpg" width="195" style="visibility: visible;">
-              </div>
+              </center>
             </div>
           </div>
         </div>
@@ -383,59 +385,59 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
 
   <!--================ Start Registration Area =================-->
   <!-- <div class="section_gap registration_area">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-          <div class="row clock_sec clockdiv" id="clockdiv">
-            <div class="col-lg-12">
-              <h1 class="mb-3">Siswa SD IT Permata Padang</h1>
-              <p>
-                Rincian Jumlah Siswa Pada Tahun pelajaran 2019/2020
-              </p>
-            </div>
-            <div class="col clockinner1 clockinner">
-              <h1 class="days">150</h1> <br>
-              <span class="smalltext">Siswa Laki-laki </span>
-            </div>
-            <div class="col clockinner clockinner1">
-              <h1 class="hours">23</h1> <br>
-              <span class="smalltext">Siswa Perempuan</span>
-            </div>
-            <div class="col clockinner clockinner1">
-              <h1 class="minutes">47</h1> <br>
-              <span class="smalltext">Total Siswa</span>
-            </div>
-            <div class="col clockinner clockinner1">
-              <h1 class="seconds">2019/2020</h1> <br>
-              <span class="smalltext">Tahun Ajaran</span>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="row clock_sec clockdiv" id="clockdiv">
+              <div class="col-lg-12">
+                <h1 class="mb-3">Siswa SD IT Permata Padang</h1>
+                <p>
+                  Rincian Jumlah Siswa Pada Tahun pelajaran 2019/2020
+                </p>
+              </div>
+              <div class="col clockinner1 clockinner">
+                <h1 class="days">150</h1> <br>
+                <span class="smalltext">Siswa Laki-laki </span>
+              </div>
+              <div class="col clockinner clockinner1">
+                <h1 class="hours">23</h1> <br>
+                <span class="smalltext">Siswa Perempuan</span>
+              </div>
+              <div class="col clockinner clockinner1">
+                <h1 class="minutes">47</h1> <br>
+                <span class="smalltext">Total Siswa</span>
+              </div>
+              <div class="col clockinner clockinner1">
+                <h1 class="seconds">2019/2020</h1> <br>
+                <span class="smalltext">Tahun Ajaran</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 offset-lg-1">
-          <div class="register_form">
-            <h3>Detail SD IT Permata Padang</h3>
-            <p class="text-left mt-3">
-              <b>Rombongan Belajar</b> : <br> 12 Rombongan
-              <br>
-              <b>Kurikulum</b> : <br> KTSP 2006 dan Kurikulum 2013
-              <br>
-              <b>Penyelenggaraan</b> : <br> Sehari Penuh/5 Hari
-              <br>
-              <b>Rasio Siswa Rombel</b> : <br> 25.83
-              <br>
-              <b>Rasio Siswa Guru</b> : <br> 14.76
-              <br>
-              <b>Ruang Kelas</b> : <br> 12 Ruangan
-              <br>
-              <b>Laboratorium</b> : <br> 1 Ruangan
-              <br>
-              <b>Perpustakaan</b> : <br> 1 Ruangan
-            </p>
+          <div class="col-lg-4 offset-lg-1">
+            <div class="register_form">
+              <h3>Detail SD IT Permata Padang</h3>
+              <p class="text-left mt-3">
+                <b>Rombongan Belajar</b> : <br> 12 Rombongan
+                <br>
+                <b>Kurikulum</b> : <br> KTSP 2006 dan Kurikulum 2013
+                <br>
+                <b>Penyelenggaraan</b> : <br> Sehari Penuh/5 Hari
+                <br>
+                <b>Rasio Siswa Rombel</b> : <br> 25.83
+                <br>
+                <b>Rasio Siswa Guru</b> : <br> 14.76
+                <br>
+                <b>Ruang Kelas</b> : <br> 12 Ruangan
+                <br>
+                <b>Laboratorium</b> : <br> 1 Ruangan
+                <br>
+                <b>Perpustakaan</b> : <br> 1 Ruangan
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div> -->
+    </div> -->
   <!--================ End Registration Area =================-->
 
   <!--================ Start Trainers Area =================-->
@@ -455,7 +457,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
       <div class="row justify-content-center d-flex align-items-center">
         <!-- Awal Perulangan  -->
         <?php
-        $sql = mysqli_query($con, "SELECT * FROM agenda ORDER BY id_agenda DESC");
+        $sql = mysqli_query($con, "SELECT * FROM agenda ORDER BY id_agenda DESC LIMIT 3");
         while ($data = mysqli_fetch_assoc($sql)) {
           $isi = substr($data['isi_agenda'], 0, 200);
           // var_dump($data);
@@ -469,12 +471,12 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
             <div class="meta-text text-sm-center">
               <h4><?= $data['judul_agenda'] ?></h4>
               <p class="mt-3"><a href="" class="btn btn-primary">Selengkapnya</a></p>
-              <div class="align-items-center justify-content-center d-flex">
+              <!-- <div class="align-items-center justify-content-center d-flex">
                 <a href="#"><i class="ti-facebook"></i></a>
                 <a href="#"><i class="ti-twitter"></i></a>
                 <a href="#"><i class="ti-linkedin"></i></a>
                 <a href="#"><i class="ti-pinterest"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -486,8 +488,51 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
   </section>
   <!--================ End Trainers Area =================-->
 
+  <!-- Start  -->
+  <!-- <section id="counts" class="counts">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <i class="icofont-users-social"></i>
+          <div class="count-box">
+            <span data-toggle="counter-up">232</span>
+            <p>Siswa</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="icofont-document-folder"></i>
+            <span data-toggle="counter-up">521</span>
+            <p>Guru</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="icofont-live-support"></i>
+            <span data-toggle="counter-up">1,463</span>
+            <p>Lokal</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="icofont-users-alt-5"></i>
+            <span data-toggle="counter-up">15</span>
+            <p>Lab</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section> -->
+  <!-- End -->
   <!--================ Start Events Area =================-->
-  <section id="events_area">
+  <!-- <section id="events_area">
     <div class="events_area">
       <div class="container">
         <div class="row justify-content-center">
@@ -501,8 +546,6 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
           </div>
         </div>
         <div class="row">
-
-          <!-- Awal Perulangan -->
           <?php
           $ambilTesti = mysqli_query($con, "SELECT * FROM `testimoni` WHERE 1");
           while ($pecahTesti = mysqli_fetch_assoc($ambilTesti)) {
@@ -520,12 +563,11 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
                 </div>
               </div>
             </div>
-            <!-- Akhir Perulangan -->
           <?php } ?>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!--================ End Events Area =================-->
 
   <!--================ Start Testimonial Area =================-->
@@ -646,7 +688,7 @@ $contact = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM contact"));
           Copyright &copy;<script>
             document.write(new Date().getFullYear());
           </script> All rights reserved <b>SD IT Permata Padang</b> | <a href="http://mediatamaweb.com"><b>CV Mediatama
-              Web</b></a> by <a href="https://instagram.com/egovaflavia" target="_blank"><b>Egova</b></a>
+              Web</b></a> by <a href="https://instagram.com/egovaflavia" target="_blank"><b>Egova</b></a> & <a href="https://www.instagram.com/ial_ilham/" target="_blank"><b>IAL</b></a>
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
         <div class="col-lg-4 col-sm-12 footer-social">

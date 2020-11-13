@@ -689,7 +689,7 @@ button:focus {
 #feature_area .main_title h2 {
   font-family: 'Oswald',
     sans-serif !important;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 @media (max-width: 991px) {
@@ -707,7 +707,6 @@ button:focus {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  height: 500px;
 }
 
 @media (max-width: 480px) {
@@ -745,26 +744,23 @@ button:focus {
 #popular_courses .kiri {
   box-shadow: 0 0 30px rgba(175, 182, 182, 0.342);
   padding: 30px;
-  height: 1250px;
+
 }
 
 #popular_courses .kotak {
-  box-shadow: 0 0 30px rgba(201, 206, 206, 0.6);
+  box-shadow: 0 0 30px rgba(175, 182, 182, 0.192);
   padding: 30px;
 }
 
 #popular_courses .main_title h2,
 h3 {
-  background-color: #032e5ae1;
   font-family: 'Oswald',
     sans-serif !important;
-  color: #fff;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 #popular_courses .card h4 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 @media (max-width: 991px) {
@@ -1294,7 +1290,7 @@ h3 {
 h3 {
   font-family: 'Oswald',
     sans-serif !important;
-  font-weight: 200;
+  font-weight: bold;
 }
 
 @media (max-width: 991px) {
@@ -1362,7 +1358,7 @@ h3 {
 /* Start Event Area css
 ============================================================================================ */
 #events_area .events_area {
-  background: #002347;
+  background: #062b5b;
 }
 
 #events_area .events_area {
@@ -1373,7 +1369,7 @@ h3 {
 #events_area .main_title h2 {
   font-family: 'Oswald',
     sans-serif !important;
-  font-weight: 200;
+  font-weight: bold;
 
 }
 
@@ -1403,7 +1399,7 @@ h3 {
   background: url(../../img/note.jpg);
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 500px;
 }
 
 .single_event {
@@ -1488,7 +1484,7 @@ p {
 p {
   font-family: 'Oswald',
     sans-serif !important;
-  font-weight: 200;
+  font-weight: bold;
 }
 
 .testimonial_area .owl-carousel .owl-dots {
@@ -2234,6 +2230,48 @@ p {
     padding-bottom: 0px;
   }
 }
+
+.counts {
+  background: #f6f9fe;
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #062b5b;
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: #ffffff;
+  padding: 12px;
+  color: #062b5b;
+  border-radius: 50px;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: white;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
 
 .comments-area {
   background: #f1f9ff;
