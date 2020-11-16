@@ -30,15 +30,15 @@
                           <li class="nav-item submenu dropdown">
                               <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
                               <ul class="dropdown-menu">
-                                  <li class="nav-item">
+                                  <!-- <li class="nav-item">
                                       <a class="nav-link" href="">Sambutan</a>
-                                  </li>
+                                  </li> -->
                                   <li class="nav-item">
                                       <a class="nav-link" href="">Struktur</a>
                                   </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link" href="">Visi dan Misi</a>
-                                  </li>
+                                  <!-- <li class="nav-item">
+                                      <a class="nav-link" href="#feature_area">Visi dan Misi</a>
+                                  </li> -->
                                   <li class="nav-item">
                                       <a class="nav-link" href="">Sarana dan Prasarana</a>
                                   </li>
@@ -59,9 +59,9 @@
                                   <li class="nav-item">
                                       <a class="nav-link" href="">Prestasi</a>
                                   </li>
-                                  <li class="nav-item">
+                                  <!-- <li class="nav-item">
                                       <a class="nav-link" href="">Akreditasi</a>
-                                  </li>
+                                  </li> -->
                               </ul>
                           </li>
                           <li class="nav-item submenu dropdown">

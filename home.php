@@ -1,201 +1,166 @@
   <!--================ End Header Menu Area =================-->
   <!--================ Start Home Banner Area =================-->
   <section class="home_banner_area">
-      <div class="owl-carousel active_course_single">
-          <div class="item">
-              <img src="img/homeslider/banner1.png" alt="">
-          </div>
-          <div class="item">
-              <img src="img/homeslider/banner2.png" alt="">
-          </div>
+    <div class="owl-carousel active_course_single">
+      <div class="item">
+        <img src="img/homeslider/banner1.png" alt="">
       </div>
+      <div class="item">
+        <img src="img/homeslider/banner2.png" alt="">
       </div>
-      <div class="banner_inner mt-5">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-12">
-                      <div class="banner_content text-center">
-                          <!-- <p class="text-uppercase">
+    </div>
+    </div>
+    <div class="banner_inner mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner_content text-center">
+              <!-- <p class="text-uppercase">
                 Terakreditasi
               </p> -->
-                          <!-- <h2 class="text-uppercase mt-4 mb-5">
+              <!-- <h2 class="text-uppercase mt-4 mb-5">
                 SD IT Permata Padang
               </h2> -->
-                          <div>
-                              <!-- <a href="#" class="primary-btn2 mb-3 mb-sm-0">Pendaftara Siswa Baru </a> -->
-                              <!-- <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a> -->
-                          </div>
-                      </div>
-                  </div>
+              <div>
+                <!-- <a href="#" class="primary-btn2 mb-3 mb-sm-0">Pendaftara Siswa Baru </a> -->
+                <!-- <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a> -->
               </div>
+            </div>
           </div>
+        </div>
+      </div>
   </section>
   <!--================ End Home Banner Area =================-->
 
   <!--================ Start Feature Area =================-->
   <section class="feature_area section_gap_top" id="feature_area">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-5">
-                  <div class="main_title">
-                      <h2 class="mb-3">Visi, Misi, Akreditasi Sekolah</h2>
-                      <p>
-                          SD IT Permata Padang
-                      </p>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">Visi, Misi, & Profile Sekolah</h2>
+            <p>
+              MAN KOTA PARIAMAN
+            </p>
           </div>
-          <div class="row">
-              <div class="col-md-8">
-                  <div class="row">
-                      <div class="col-lg-12 col-md-12">
-                          <div class="single_feature">
-                              <div>
-                                  <div class="icon"><span class="flaticon-student"></span></div>
-                                  <div class="desc">
-                                      <h4 class="mt-3 mb-2">Visi Sekolah</h4>
-                                      <p>
-                                          "CERDAS, BERAKHLAK MULIA, BERDAYA GUNA DAN PEDULI LINGKUNGAN"
-                                      </p>
-                                  </div>
-                              </div>
-
-                              <div class="mt-5">
-                                  <div class="icon"><span class="flaticon-book"></span></div>
-                                  <div class="desc">
-                                      <h4 class="mt-3 mb-2">Misi Sekolah</h4>
-                                      <p>
-                                          <ul>
-                                              1. Meningkatkan Prestasi Akademik Lulusan dan Jumlah Siswa yang Melanjutkan Pendidikan di PTN
-                                              <br>
-                                              2. Meningkatkan Kemampuan Siswa dalam Memahami Agama Islam dan Mengaplikasikan dalam Kehidupan
-                                              Sehari-hari <br>
-                                              3. Membudayakan Siswa Tekun Melaksanakan Ibadah wajib, Maupun Sunnah, Santun dalam Bertutur
-                                              serta Berprilaku <br>
-                                              4. Meningkatkan Jumlah Siswa yang Mampu Menjadi Penggerak Keagamaan dan Berperan dalam Kegiatan
-                                              Kepemudaan di Lingkungan
-                                              <br>
-                                              5. Meningkatkan Pengetahuaan Pengelolaan Lingkungan Hidup
-                                              <br>
-                                              6. Meningkatkan Hidup Sehat dan Bersih
-                                              <br>
-                                              7. Mengembangkan Sikap Peduli Lingkungan
-                                          </ul>
-                                      </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="single_feature">
-                      <div class="icon"><span class="flaticon-earth"></span></div>
-                      <div class="desc">
-                          <h4 class="mt-3 mb-2">Akreditasi Madrasah</h4>
-                          <p class="sample-text">
-                              Berdasarkan Data Kementrian Pendidikan dan Kebudayaan dengan <br> <b>No. SK. Akreditasi</b> : <br>
-                              851/BAP-SM/LL/X/2015 <br>
-                              Madrasah aliyah Negeri Kota Pariaman <b>Terakreditasi A</b> <br>
-                              <a href="https://referensi.data.kemdikbud.go.id/tabs.php?npsn=10310830">Selengkapnya Klik Disini</a>
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
-      <br>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <?php $sql = mysqli_query($con, "SELECT * FROM visimisi");
+              $data = mysqli_fetch_assoc($sql); ?>
+              <div class="single_feature">
+                <?= $data['isi_visi'] ?>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="single_feature">
+            <div class="icon"><span class="flaticon-earth"></span></div>
+            <?php $sql = mysqli_query($con, "SELECT * FROM akreditasi");
+            $data = mysqli_fetch_assoc($sql); ?>
+            <div class="desc">
+              <?= $data['isi_akre'] ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
   </section>
   <!--================ End Feature Area =================-->
 
   <!--================ Start Popular Courses Area =================-->
   <section id="popular_courses">
-      <div class="popular_courses">
-          <div class="container">
-              <div class="row">
-                  <!-- single course -->
-                  <div class="col-lg-9 col-md-12">
-                      <div class="kiri">
-                          <div class="main_title">
-                              <h2 class="mt-3">Berita Terkini</h2>
-                              <p>
-                                  Menyajikan berita seputar SD IT Permata Padang
-                              </p>
-                          </div>
-                          <ul>
-                              <?php
-                                $sql = mysqli_query($con, "SELECT * FROM berita ORDER BY id_berita DESC LIMIT 5");
-                                while ($data = mysqli_fetch_assoc($sql)) {
-                                    $isi = substr($data['isi_berita'], 0, 100);
-                                    $judulberita = substr($data['judul_berita'], 0, 16) . "...";
-                                ?>
-                                  <li>
-                                      <div class="row">
-                                          <div class="kotak">
-                                              <div class="col-md-4 col-sm-12">
-                                                  <span class="rel_thumb">
-                                                      <a href="?page=pages/berita&iddetail=<?php echo $data['id_berita'] ?>"><img style="height: 150px;" width="320px" class="img-fluid" src="img/berita/<?= $data['gambar'] ?>" alt="No Image" /></a>
-                                                  </span>
-                                              </div>
-                                              <div class="col-md-8 col-sm-12">
-                                                  <div class="rel_right">
-                                                      <a href="?page=pages/berita&iddetail=<?php echo $data['id_berita'] ?>">
-                                                          <h4><?= $data['judul_berita'] ?></h4>
-                                                      </a>
-                                                      <div class="meta">
-                                                          <h5><span class="author">Posted in : <a href="#"><?= tgl_indo($data['tgl_post']) ?></a></span></h5>
-                                                      </div>
-                                                      <p>
-                                                          <h5> <?= $isi ?> ....</h5>
-                                                      </p>
-                                                      <a href="?page=pages/berita&iddetail=<?php echo $data['id_berita'] ?>" class="btn btn-primary">Selengkapnya</a>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <br>
-                              <?php } ?>
-                              <a href="" class="btn btn-primary">Semua Berita</a>
-                          </ul>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-12">
-                      <div class="kiri">
-                          <h4>Kepala Madrasah</h4>
-                          <div class="card">
-                              <center>
-                                  <img alt="KEPALA MADRASAH" height="273" id="Image1_img" src="img/ZALKHAIRI.jpg" width="195" style="visibility: visible;">
-                              </center>
-                              <h5 class="text-center">Zalkhairi, S.Ag, M.Pd</h5>
-                          </div>
-                          <br>
-                          <h4>Save The Earth</h4>
-                          <div class="col-lg-12 col-md-6 col-sm-6"></div>
-                          <center>
-                              <img alt="save the earth" height="273" id="Image1_img" src="img/green.jpg" width="195" style="visibility: visible;">
-                          </center>
-                          <br>
-                          <center>
-                              <img alt="save the earth" height="273" id="Image1_img" src="img/germas.jpeg" width="195" style="visibility: visible;">
-                          </center>
-                          <br>
-                          <div class="col-lg-12 col-md-6 col-sm-6"></div>
-                          <center>
-                              <img alt="save the earth" height="273" id="Image1_img" src="img/germas.jpg" width="195" style="visibility: visible;">
-                          </center>
-                          <br>
-                          <center>
-                              <img alt="save the earth" height="273" id="Image1_img" src="img/re.jpg" width="195" style="visibility: visible;">
-                          </center>
-                      </div>
-                  </div>
+    <div class="popular_courses">
+      <div class="container">
+        <div class="row">
+          <!-- single course -->
+          <div class="col-lg-9 col-md-12">
+            <div class="kiri">
+              <div class="main_title">
+                <h2 class="mt-3">Berita Terkini</h2>
+                <p>
+                  Menyajikan berita seputar MAN KOTA PARIAMAN
+                </p>
               </div>
+              <ul>
+                <?php
+                $sql = mysqli_query($con, "SELECT * FROM berita ORDER BY id_berita DESC LIMIT 5");
+                while ($data = mysqli_fetch_assoc($sql)) {
+                  $isi = substr($data['isi_berita'], 0, 100);
+                  $judulberita = substr($data['judul_berita'], 0, 16) . "...";
+                ?>
+                  <li>
+                    <div class="row">
+                      <div class="kotak">
+                        <div class="col-md-4 col-sm-12">
+                          <span class="rel_thumb">
+                            <a href="?page=pages/berita&iddetail=<?php echo $data['id_berita'] ?>"><img style="height: 150px;" width="320px" class="img-fluid" src="img/berita/<?= $data['gambar'] ?>" alt="No Image" /></a>
+                          </span>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                          <div class="rel_right">
+                            <a href="?page=pages/berita&iddetail=<?php echo $data['id_berita'] ?>">
+                              <h4><?= $data['judul_berita'] ?></h4>
+                            </a>
+                            <div class="meta">
+                              <h5><span class="author">Posted in : <a href="#"><?= tgl_indo($data['tgl_post']) ?></a></span></h5>
+                            </div>
+                            <p>
+                              <h5> <?= $isi ?> ....</h5>
+                            </p>
+                            <a href="?page=pages/berita&iddetail=<?php echo $data['id_berita'] ?>" class="btn btn-primary">Selengkapnya</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <br>
+                <?php } ?>
+                <a href="" class="btn btn-primary">Semua Berita</a>
+              </ul>
+            </div>
           </div>
+
+          <div class="col-lg-3 col-md-12">
+            <div class="kiri">
+              <h4>Kepala Madrasah</h4>
+              <div class="card">
+                <center>
+                  <img alt="KEPALA MADRASAH" height="273" id="Image1_img" src="img/ZALKHAIRI.jpg" width="195" style="visibility: visible;">
+                </center>
+                <h5 class="text-center">Zalkhairi, S.Ag, M.Pd</h5>
+              </div>
+              <br>
+              <h4>Save The Earth</h4>
+              <div class="col-lg-12 col-md-6 col-sm-6"></div>
+              <center>
+                <img alt="save the earth" height="273" id="Image1_img" src="img/green.jpg" width="195" style="visibility: visible;">
+              </center>
+              <br>
+              <center>
+                <img alt="save the earth" height="273" id="Image1_img" src="img/germas.jpeg" width="195" style="visibility: visible;">
+              </center>
+              <br>
+              <div class="col-lg-12 col-md-6 col-sm-6"></div>
+              <center>
+                <img alt="save the earth" height="273" id="Image1_img" src="img/germas.jpg" width="195" style="visibility: visible;">
+              </center>
+              <br>
+              <center>
+                <img alt="save the earth" height="273" id="Image1_img" src="img/re.jpg" width="195" style="visibility: visible;">
+              </center>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
+    </div>
+    </div>
   </section>
   <!--================ End Popular Courses Area =================-->
 
@@ -206,7 +171,7 @@
           <div class="col-lg-7">
             <div class="row clock_sec clockdiv" id="clockdiv">
               <div class="col-lg-12">
-                <h1 class="mb-3">Siswa SD IT Permata Padang</h1>
+                <h1 class="mb-3">Siswa MAN KOTA PARIAMAN</h1>
                 <p>
                   Rincian Jumlah Siswa Pada Tahun pelajaran 2019/2020
                 </p>
@@ -231,7 +196,7 @@
           </div>
           <div class="col-lg-4 offset-lg-1">
             <div class="register_form">
-              <h3>Detail SD IT Permata Padang</h3>
+              <h3>Detail MAN KOTA PARIAMAN</h3>
               <p class="text-left mt-3">
                 <b>Rombongan Belajar</b> : <br> 12 Rombongan
                 <br>
@@ -258,49 +223,49 @@
 
   <!--================ Start Trainers Area =================-->
   <section class="trainer_area section_gap_top">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-5">
-                  <div class="main_title">
-                      <h2>Agenda</h2>
-                      <p>
-                          Agenda Sekolah, SD IT Permata Padang
-                      </p>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2>Agenda</h2>
+            <p>
+              Agenda Sekolah, MAN KOTA PARIAMAN
+            </p>
           </div>
+        </div>
+      </div>
 
-          <!-- Awal Perulangan  -->
-          <div class="row">
-              <?php
-                $sql = mysqli_query($con, "SELECT * FROM agenda ORDER BY id_agenda DESC LIMIT 6");
-                while ($data = mysqli_fetch_assoc($sql)) {
-                    $isi = substr($data['isi_agenda'], 0, 200);
-                    // var_dump($data);
-                ?>
-                  <div class="col-lg-2 col-md-12 col-sm-12">
-                      <div class="thumb d-flex justify-content-sm-center">
-                          <img style="width:100px; height: 50px;" class="img-fluid" src="img/agenda sekolah/<?= $data['gambar'] ?>" alt="No Image" />
-                      </div>
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="meta-text text-sm-left">
-                          <h4><?= $data['judul_agenda'] ?></h4>
-                          <p class="mt-3"><a href="" class="btn btn-primary">Selengkapnya</a></p>
-                          <!-- <div class="align-items-center justify-content-center d-flex">
+      <!-- Awal Perulangan  -->
+      <div class="row">
+        <?php
+        $sql = mysqli_query($con, "SELECT * FROM agenda ORDER BY id_agenda DESC LIMIT 6");
+        while ($data = mysqli_fetch_assoc($sql)) {
+          $isi = substr($data['isi_agenda'], 0, 200);
+          // var_dump($data);
+        ?>
+          <div class="col-lg-2 col-md-12 col-sm-12">
+            <div class="thumb d-flex justify-content-sm-center">
+              <img style="width:100px; height: 50px;" class="img-fluid" src="img/agenda sekolah/<?= $data['gambar'] ?>" alt="No Image" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="meta-text text-sm-left">
+              <h4><?= $data['judul_agenda'] ?></h4>
+              <p class="mt-3"><a href="?page=pages/agenda&idagenda=<?php echo $data['id_agenda'] ?>" class="btn btn-primary">Selengkapnya</a></p>
+              <!-- <div class="align-items-center justify-content-center d-flex">
                 <a href="#"><i class="ti-facebook"></i></a>
                 <a href="#"><i class="ti-twitter"></i></a>
                 <a href="#"><i class="ti-linkedin"></i></a>
                 <a href="#"><i class="ti-pinterest"></i></a>
               </div> -->
-                      </div>
-                  </div>
-
-              <?php } ?>
+            </div>
           </div>
+
+        <?php } ?>
       </div>
-      <!-- Akhir Perulangan  -->
-      </div>
+    </div>
+    <!-- Akhir Perulangan  -->
+    </div>
   </section>
   <!--================ End Trainers Area =================-->
 
@@ -356,18 +321,18 @@
             <div class="main_title">
               <h2 class="mb-3 text-white">Testimonial</h2>
               <p>
-                Pendapat mereke tentan SD IT Permata Padang
+                Pendapat mereke tentan MAN KOTA PARIAMAN
               </p>
             </div>
           </div>
         </div>
         <div class="row">
           <?php
-            $ambilTesti = mysqli_query($con, "SELECT * FROM `testimoni` WHERE 1");
-            while ($pecahTesti = mysqli_fetch_assoc($ambilTesti)) {
-                $isi = substr($pecahTesti['isi_agenda'], 0, 200);
-                // var_dump($pecahTesti);
-            ?>
+          $ambilTesti = mysqli_query($con, "SELECT * FROM `testimoni` WHERE 1");
+          while ($pecahTesti = mysqli_fetch_assoc($ambilTesti)) {
+            $isi = substr($pecahTesti['isi_agenda'], 0, 200);
+            // var_dump($pecahTesti);
+          ?>
             <div class="col-lg-4 col-md-4 col-sm-12">
               <div class="single_event position-relative">
                 <div class="card">
@@ -388,40 +353,43 @@
 
   <!--================ Start Testimonial Area =================-->
   <div class="testimonial_area section_gap">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-5">
-                  <div class="main_title">
-                      <h2 class="">Dokumentasi Video</h2>
-                      <p>
-                          Dokumentasi Video SD IT Permata Padang
-                      </p>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="">Dokumentasi Video</h2>
+            <p>
+              Dokumentasi Video MAN KOTA PARIAMAN
+            </p>
           </div>
+        </div>
+      </div>
 
-          <div class="row mx-auto">
+      <div class="row mx-auto">
 
-              <!-- Akhir Perulangan -->
+        <!-- Akhir Perulangan -->
 
-              <?php
-                // $glr = mysqli_query($con, "SELECT * FROM video ");
-                // while ($cglr = mysqli_fetch_assoc($glr)) {
-                // var_dump($cglr['link_v']);
-                ?>
-              <div class="col-md-4">
-                  <div class="text-center">
-                      <iframe width="100%" height="300" src="https://www.youtube.com/embed/zFbJ9QNE_7k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <div class="testi_text text-center">
-                          <p>
-                              <h4>Nada Syiar Padusunan Drum Corps - MAN Kota Pariaman (Full Band MMC 2018)</h4>
-                              <a href="https://youtu.be/zFbJ9QNE_7k" class="btn btn-primary">Lihat Selengkapnya di
-                                  Youtube</a>
-                          </p>
-                      </div>
-                  </div>
+        <?php
+        // $glr = mysqli_query($con, "SELECT * FROM video ");
+        // while ($cglr = mysqli_fetch_assoc($glr)) {
+        // var_dump($cglr['link_v']);
+        ?>
+        <?php $sql = mysqli_query($con, "SELECT * FROM video ORDER BY id_video DESC LIMIT 3");
+        while ($data = mysqli_fetch_assoc($sql)) { ?>
+          <div class="col-md-4">
+            <div class="text-center">
+              <iframe width="100%" height="300" src="<?= $data['link_v'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <div class="testi_text text-center">
+                <p>
+                  <h4><?= $data['ket'] ?></h4>
+                </p>
               </div>
-              <div class="col-md-4">
+            </div>
+          </div>
+        <?php } ?>
+
+        <!-- <div class="col-md-4">
                   <div class="text-center">
                       <iframe width="100%" height="300" src="https://www.youtube.com/embed/Vd5CcigJ69c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       <div class="testi_text text-center">
@@ -444,16 +412,16 @@
                           </p>
                       </div>
                   </div>
-              </div>
-              <?php // } 
-                ?>
+              </div> -->
+        <?php // } 
+        ?>
 
-              <!-- Akhir Perulangan -->
-
-          </div>
-
-          <a href="" class="btn btn-primary">Semua Dokumentasi</a>
+        <!-- Akhir Perulangan -->
 
       </div>
+
+      <a href="" class="btn btn-primary">Semua Dokumentasi</a>
+
+    </div>
   </div>
   <!--================ End Testimonial Area =================-->
